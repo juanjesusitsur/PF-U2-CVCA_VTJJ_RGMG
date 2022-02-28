@@ -1,6 +1,4 @@
-*{
-    
-}
+
 
 #container-main{
     margin:40px auto;
@@ -199,9 +197,16 @@ footer{
     min-height: 40vh;
 }
 
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> 9554371d06f864c65af47c2e52bfa6ba1607d650
 @media (max-width: 767px) {
     .accordion-content {
         padding: 10px 0;
     }
 }
+
+
 
