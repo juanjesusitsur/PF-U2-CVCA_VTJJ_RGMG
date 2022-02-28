@@ -193,6 +193,12 @@ footer{
     font-family: sans-serif;
 }
 
+.card-group{
+    margin-left: 10%;
+    margin-right: 10%;
+    min-height: 40vh;
+}
+
 @media (max-width: 767px) {
     .accordion-content {
         padding: 10px 0;
