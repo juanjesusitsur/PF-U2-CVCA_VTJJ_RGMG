@@ -4,31 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pagina</title>
+    <title>Northwind</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/estilo.css">
     <link rel="stylesheet" href="js/accion.js">
-    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
-    <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
-    <script>
-         $(function(){
-            $(".accordion-titulo").click(function(){
-		
-            var contenido=$(this).next(".accordion-content");
-                 
-            if(contenido.css("display")=="none"){ //open		
-               contenido.slideDown(250);			
-              $(this).addClass("open");
-           }
-           else{ //close		
-                contenido.slideUp(250);
-                $(this).removeClass("open");	
-            }
-                                 
-     });
-   });
-</script>
 </head>
 <body>
     <!-- NAVRBAR -->
@@ -50,11 +30,11 @@
 
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav">
-                    <li class="nav-item"><a class="nav-link" href="Caracterist.html#">Caracteristicas</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Planes y precios</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Soporte</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#Parte1">Caracteristicas</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#pp">Planes y precios</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#txt-S">Soporte</a></li>
                     <li class="nav-item"><a class="nav-link" href="#">Sobre Nosotros</a></li>
-                    <li class="nav-item"><a class="nav-link" href="formContact.html#">Contáctame</a></li>
+                    <li class="nav-item"><a class="nav-link" href="formContact.html">Contáctanos</a></li>
                     <button class="btn btn-outline-secondary" type="submit"><i class="bi bi-person-circle"></i> Iniciar sesión</button>
                 </ul>
             </div>
@@ -81,80 +61,136 @@
     </section>
 </header>
 
-<!-- Qué Ofrecemos -->
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
 
+<!-- Características -->
 <header>
-    <section>
-        <div >
-            <div id="container-main">
-                <h1>Qué Ofrecemos</h1>
-            <div class="accordion-container">
-                <a  class="accordion-titulo">Diseño<span class="toggle-icon"></span></a>
-            <div class="accordion-content">
-                <p>La base de datos es facil de diseñar, ya que podemos 
-                    hacer que mejores tus proyectos, para que tengas exito en 
-                    el futuro para cualquier diseño que se te quieres realizar
-                     y sera rediseñarla por el usuario si lo desean. </p>
-                <p>Lo que puedes hacer con tu diseño gracias al lis planas que te ofrecemos:</p>
-                <p>>>> Diseñar los planeles al igual que sus graficos </p>
-                <p>>>> Intrumentos para el diseño y su proceso</p>
-                <p>>>> Puedes tener una distribucion en 3D y 2D al momento del montaje </p>
-                </div>  
-            </div>
-            <div class="accordion-container">
-                <a  class="accordion-titulo">Programación<span class="toggle-icon"></span></a>
-            <div class="accordion-content">
-                <p>Podras tener un menejo de la programación muy 
-                    optimizado, eficaz, Escencial y productiva. 
-                    Para cualquier proyecto que Lleves a cabo.</p>
-                    <p>lo que incliye es:</p>
-                    <p>>> poder comfigurar la interfaz.</p>
-                    <p>>> se puede hacer la integración de la arquitetura con la base de datos.</p>
-                    <p>>> Obtener una varidad de elementos para la programación en cualquier lenguaje que necesites.</p>
-                </div>  
-            </div>
-               <!--<h3>>Como finciona</h3>
-               <h3>>incluye</h3>
-               <h3>>ventajas respecto a la competencia</h3>-->
-            </div>
-        </div> 
+    <section id="Parte1">
+        <h1>qué incluye</h1>
+        <h4>Nuestra base de datos incliye:</h4>
+        <p>una base de datos que gestiona los pedidos, ventas, provedores, 
+            documentación, registro de inventarios, clientes, servisios,
+            entre muchas otros aspectos.
+        </p></br>
     </section>
 </header>
 
-<!-- Soporte
 
 <header>
     <section>
-        <div >
-            <div id="container-main">
-                <h1>soporte</h1>
-            <div class="accordion-container">
-                <a href="#" class="accordion-titulo">preguntas frecuentes<span class="toggle-icon"></span></a>
-            <div class="accordion-content">
-                <p></p>
-                <div class="accordion-container">
-                    <a href="#" class="accordion-titulo">¿Qué?<span class="toggle-icon"></span></a>
-                <div class="accordion-content">
-                    <p></p>
-                    </div>  
-                </div>
-                </div>  
-            </div>
-               <h3>Reporte de fallas</h3>
-            </div>
-        </div> 
+        <h1>Vetajas respecto a la competencia</h1>
+        <h4>La competencia ofrece:</h4>
+        <p>una lista con viñetas de productos, servicios o principales 
+            ventajas de colaborar con su empresa, al compartir los datos, la evitacion de redundancia, etc.
+        </p>
+        <h3>Lo que nosotros ofrecemos</h3>
+            <p>podemos mejorar estas ofertas con:</p>
+            <p>No habra restrinciones para manejar las herramientas.</p>
+            <p>Más facilidad para entender las entidades y relaciones.</p>
+            <p>Mantener la integridad del usuario.</p>
+            <p>Realizacion de copias de seguridad en la nube.</p></br>
     </section>
 </header>
--->
 
-    <script src="js/popper.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
+<header>
+    <section>
+        <h1>cómo funciona</h1>
+        <table class="default">
 
-    <!-- Formulario de Contacto -->
-    <form action="xd" >
-        <h2>Ingresa los siguientes datos para contactarte</h2>
+            <tr>
+                <th>Basadas en:</th>
+                <th>ejemplos:</th>
+                <th>funciona:</th>
+          
+            </tr>
+          
+            <tr>
+                <td>una empresa ficticia.</td>
+                <td>Incorpora las transacciones.</td>
+                <td>Registrando los detalles de una vento compra etc.</td>
+            </tr>
+            <tr>
+                <td>Proyectos de desarrollo.</td>
+                <td>Estudiantes Elaborando proyectos.</td>
+                <td>Base de datos de invetario Propocionado al Usuario.</td>
+            </tr>
+            <tr>
+                <td>Rediseñación de la base de datos.</td>
+                <td>Nuevas modificasiones.</td>
+                <td>se atualizara la modificasiones a la base de datos con acceso a internet.</td>
+            </tr>
+            </table>
+    </section>  
+</header>
 
+<!-- Planes y precios -->
+<div id="pp">
+	<br><h4 class="d-flex justify-content-center fs-1">Planes y precios</h4><br>
+
+    <div class="card-group rounded">
+        <div class="card ">
+          <img src="img/foco.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <br><h5 class="card-title">Plan Básico desde $2000</h5>
+            <p class="card-text">Disfruta de nuestro software con funciones básicas</p>
+            <p class="card-text"><small class="text-muted">
+                -Soporte por correo <br>
+                -Acceso a funciones de usuario <br></small></p>
+            <button class="btn btn-dark">Comprar</button>
+          </div>
+        </div>
+        <div class="card">
+          <img src="img/mundo.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <br><h5 class="card-title">Plan Estándar desde $5000</h5>
+            <p class="card-text">Acceso a nuestro software personalizado según tus necesidades</p>
+            <p class="card-text"><small class="text-muted">
+                -Configuración personalizada <br>
+                -Asesoría según tus necesidades <br>
+                -Capacitación</small></p>
+            <button class="btn btn-dark">Comprar</button>
+          </div>
+        </div>
+        <div class="card">
+          <img src="img/grafico.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <br><h5 class="card-title">Plan Premium desde $9000</h5>
+            <p class="card-text">Servicio priorizado y personalizado ofreciendo una asesoría preferente</p>
+            <p class="card-text"><small class="text-muted">
+                -Configuración personalizada preferencial<br>
+                -Asesoría según tus necesidades <br>
+                -Capacitación y monitoreo <br>
+                -Monitoreo <br>
+                -herramientas adicionales para proyectar su empresa</small></p>
+            <button class="btn btn-dark">Comprar</button>
+          </div>
+        </div>
+      </div>
+</div>
+
+    <!-- Soporte -->
+    <h1 id="txt-S">Soporte</h1>
+    <form class="fSPF" action="" style="text-align: center">
+        <div>
+            <h2 id="tituloSec">Preguntas frecuentes</h2>
+            <input id="preg" name="preguntas" placeholder="Inserta tu pregunta aquí" required>
+            <input id="btnE1"type="button" value="Enviar">
+        </div>
+        
     </form>
+    <form class="fSRF" action="" style="text-align: center">
+        <div>
+            <h2 id="tituloSec">Reporte de fallas</h2>
+            <input id="report" name="qReporta" placeholder="¿Quién reporta?" required><br/>
+            <input id="correoE" name="correoSop" placeholder="Correo" required><br/>
+            <input id="modu" name="modulo" placeholder="¿Qué módulo desea reportar?" required><br/>
+            <textarea id="falla"name="falla" placeholder="Descripción de la falla"></textarea>
+            <input id="btnE2" type="button" value="Enviar reporte de falla">
+        </div>
+        
+    </form>
+    <br/>
 
    <!-- Footer -->
     <footer>
@@ -169,26 +205,26 @@
             <div class="column2">
              <h1>Redes Sociales</h1>
              <div class="row2">
-                <a href="https://es-la.facebook.com/login/device-based/regular/login/#"><img src="img/facebook.png"></a>
+                  <a href="https://www.facebook.com/"><img src="img/facebook.png"></a>
                  <label>Síguenos en Facebook</label>
              </div>
                  <div class="row2">
-                    <a href="https://twitter.com/iniciarsesion?lang=es#"><img src="img/twitter.png"></a>
+                     <a href="https://www.twitter.com/"><img src="img/twitter.png"></a>
                    <label>Síguenos en Twitter</label>
                </div>
             </div>
                <div class="column3">
                     <h1>Información de Contacto</h1>
                     <div class="row3">
-                        </a><img src="">
+                        <img src="img/house.png">
                         <label>Allende #219, Uriangato, Guanajuato.</label>
                     </div> 
                     <div class="row3">
-                        <img src="">
+                        <img src="img/smartphone.png">
                         <label>+52-445-101-44-08</label>
                     </div> 
                     <div class="row3">
-                        <img src="">
+                        <img src="img/contact.png">
                         <label>team-northwind@northwind.mx</label>
                     </div> 
                 </div>
@@ -199,7 +235,6 @@
                 © 2022 Todos los Derechos Reservados. NortWind
                 </div>
             </div>
-         
      </footer>
 </body>
 </html>
