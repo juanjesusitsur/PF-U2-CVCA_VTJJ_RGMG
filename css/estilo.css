@@ -1,4 +1,8 @@
-
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
 #container-main{
     margin:40px auto;
@@ -9,7 +13,7 @@
 
 #container-main h1{
     font-size: 40px;
-    text-shadow:4px 4px 5px rgb(56, 55, 55);
+    
 }
 
 .accordion-container {
@@ -24,16 +28,16 @@
     padding: 20px;
     font-size: 24px;
     font-weight: 300;
-    background: #2c3e50;
+    background: #000080;
     color: #fff;
     text-decoration: none;
 }
 .accordion-titulo.open {
-    background: #16a085;
+    background: #000;
     color: #fff;
 }
 .accordion-titulo:hover {
-    background: #1abc9c;
+    background: #000;
 }
 
 .accordion-titulo span.toggle-icon:before {
@@ -68,64 +72,6 @@
     margin: 0 15px 10px 0;
     width: 50%;
     height: auto;
-}
-
-/* Soporte */
-#txt-S{
-    text-align: center;
-}
-
-.fSPF{
-    width: 700px;
-    margin: auto;
-    background-color: rgb(66, 66, 66);
-    padding: 10px 20px;
-    box-sizing: border-box;
-    margin-top: 20px;
-    border-radius: 6px;
-    color:white;
-}
-.fSRF{
-    width: 700px;
-    margin: auto;
-    background-color: rgb(66, 66, 66);
-    padding: 10px 20px;
-    box-sizing: border-box;
-    margin-top: 20px;
-    border-radius: 6px;
-    color:white;
-}
-
-
-#tituloSec{
-    text-align: center;
-    margin: 0;
-    font-size: 22px;
-    margin-bottom: 20px;
-    width: 100%;
-}
-#preg, #report, #falla, #correoE, #modu{
-    width: 100%;
-    margin-bottom: 20px;
-    padding: 7px;
-    box-sizing: border-box;
-    font-size: 16px;
-    border: #000;
-    background-color: rgb(236, 236, 236);
-    color:rgb(0, 0, 0);
-
-    
-}
-#falla{
-    min-height: 100px;
-    max-height: 200px;
-    max-width: 100%;
-}
-#btnE1, #btnE2{
-    background: #4e5974;
-    color: #fff;
-    width: 100%;
-    font-size: 16px;
 }
 
 /* Footer */
@@ -191,22 +137,9 @@ footer{
     font-family: sans-serif;
 }
 
-.card-group{
-    margin-left: 10%;
-    margin-right: 10%;
-    min-height: 40vh;
-}
-
-<<<<<<< HEAD
-=======
-
-
->>>>>>> 9554371d06f864c65af47c2e52bfa6ba1607d650
 @media (max-width: 767px) {
     .accordion-content {
         padding: 10px 0;
     }
 }
-
-
 
