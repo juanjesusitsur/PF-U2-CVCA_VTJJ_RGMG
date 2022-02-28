@@ -72,6 +72,64 @@
     height: auto;
 }
 
+/* Soporte */
+#txt-S{
+    text-align: center;
+}
+
+.fSPF{
+    width: 700px;
+    margin: auto;
+    background-color: rgb(66, 66, 66);
+    padding: 10px 20px;
+    box-sizing: border-box;
+    margin-top: 20px;
+    border-radius: 6px;
+    color:white;
+}
+.fSRF{
+    width: 700px;
+    margin: auto;
+    background-color: rgb(66, 66, 66);
+    padding: 10px 20px;
+    box-sizing: border-box;
+    margin-top: 20px;
+    border-radius: 6px;
+    color:white;
+}
+
+
+#tituloSec{
+    text-align: center;
+    margin: 0;
+    font-size: 22px;
+    margin-bottom: 20px;
+    width: 100%;
+}
+#preg, #report, #falla, #correoE, #modu{
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 7px;
+    box-sizing: border-box;
+    font-size: 16px;
+    border: #000;
+    background-color: rgb(236, 236, 236);
+    color:rgb(0, 0, 0);
+
+    
+}
+#falla{
+    min-height: 100px;
+    max-height: 200px;
+    max-width: 100%;
+}
+#btnE1, #btnE2{
+    background: #4e5974;
+    color: #fff;
+    width: 100%;
+    font-size: 16px;
+}
+
 /* Footer */
 footer{
     width: 100%;
