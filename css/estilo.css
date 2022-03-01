@@ -71,18 +71,41 @@
 }
 
 /* Características */
-table,td {
-	border: 1px solid black;
-}
-
-th{
-    color:black;
-    background: royalblue;
-}
-
-select{
-    border: 1px solid black;
-}
+div.noticia {
+    width: 700px;
+    margin: 20px auto;
+    background-color: #fff;
+    color: #000;
+    padding: 15px;
+    border-color: #000 22px;
+    border-style: dashed; 
+    border-width: 4px;
+    font-family: sans-serif;
+    
+  }
+  
+  div.noticia img.izquierda{
+    float: left;
+    margin-right: 15px;
+      width: 98px;
+  }
+  
+  div.noticia img.derecha{
+    float: right;
+    margin-right: 15px;
+    height: 84px;
+  }
+  
+  div.noticia img.izquierda3{
+    float: left;
+    margin-right: 15px;
+    width: 100px;
+  
+  }
+    
+  div.reset {
+    clear: both;
+  }
 
 /* Soporte */
 #txt-S{
