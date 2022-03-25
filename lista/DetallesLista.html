@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The table</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="../css/estilo.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <div class="container py-5">
+
+        <div>
+            <h2 class="fw-bold text-center py-5 ">Detalles del producto</h2>
+
+            <table class="table d-sm-table-responsive">
+                <thead>
+                  <tr class="bg-success text-light">
+                    <th scope="col">Clave</th>
+                    <th scope="col">Producto</th>
+                    <th scope="col">Almacén</th>
+                    <th scope="col">Existencia</th>
+                    <th scope="col">Fecha</th>
+                    <th scope="col">Tipo de movimientos</th>
+                    <th scope="col">Dar de alta Movimiento</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">1</th>
+                    <td>Coca-cola</td>
+                    <td>Zona centro</td>
+                    <td>1230</td>   
+                    <td>25/03/2022</td>
+                    <td>Entrada por compra</td> 
+                    <td><button class="col-12"><a href="../lista/DarAlta.html">Dar alta</a></button></td>             
+                  </tr>
+                </tbody>
+              </table>
+              <button class="fw-bold btn btn-outline-secondary mt-4"><a href="../lista/DetallesLista.html">Volver al inventario</a></button>
+        </div>
+    </div>
+</body>
+</html>
