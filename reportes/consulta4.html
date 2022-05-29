@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/estilo.css">
+    <title>Document</title>
+</head>
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+
+
+      google.charts.load('current', {'packages':['corechart']});
+
+
+      google.charts.setOnLoadCallback(cargarDatos);
+      function cargarDatos(){
+        fetch("https://localhost:7146/api/Employees/productos/Empleados")
+          .then(response => response.json())
+          .then(data => drawChart(data))
+          .catch(error => console.error('Unable to get items.', error));
+      }
+
+
+      function drawChart(productos) {
+        var arr1=[];
+        arr1.push(["TotalDeVentas","NombreEmpleado", { role: "style" } ]);
+        productos.forEach(p => {
+            arr1.push([p.totalDeVentas,p.nombreEmpleado, "#b87333"]);
+        });
+        var view = google.visualization.arrayToDataTable(arr1);
+
+        var options = {
+            title: "Top 5 Productos del Trimestre 3 de 1996",
+            width: 750,
+            height: 400,
+            bar: {groupWidth: "95%"},
+            legend: { position: "none" },
+      };
+      var grafica = new google.visualization.ColumnChart(document.getElementById('grafica1'));
+      grafica.draw(view,options);
+    }
+    </script>
+  </head>
+    <div id="grafica1"></div>
+  </body>
+</html>
